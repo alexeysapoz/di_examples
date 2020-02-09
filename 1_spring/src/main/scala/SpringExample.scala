@@ -1,7 +1,7 @@
 import org.springframework.context.annotation.{AnnotationConfigApplicationContext, ComponentScan, Configuration}
 import services.TransferService
 
-object Spring extends App {
+object SpringExample extends App {
   val ctx = new AnnotationConfigApplicationContext
   ctx.register(classOf[ApplicationContext])
   ctx.refresh()

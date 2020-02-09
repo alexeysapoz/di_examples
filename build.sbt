@@ -14,6 +14,7 @@ lazy val spring = project.in(file("1_spring"))
 
 lazy val guice = project.in(file("2_guice"))
   .settings(Settings.common)
+  .settings(libraryDependencies += "net.codingwell" %% "scala-guice" % "4.2.6")
   .dependsOn(common)
 
 lazy val macwire = project.in(file("3_macwire"))
